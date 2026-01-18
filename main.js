@@ -30,18 +30,18 @@ const projects = [
     tag: 'Cooking'
   },
   {
-    title: 'SipSavvy',
-    description: 'Die mobile App für Weineinsteiger. Lerne Geschmacksprofile, Aromen und die Kunst der Weinverkostung.',
-    image: 'sipsavvy_thumbnail.png',
-    link: 'https://sipsavvy.lovable.app',
-    tag: 'Education'
-  },
-  {
     title: 'Arbitrage Scanner',
     description: 'Real-time prediction market arbitrage detection and analysis tool.',
     image: 'arbitrage_scanner_thumbnail.png',
     link: 'https://flowthis.github.io/prediction-market-arbitrage/',
     tag: 'Fintech'
+  },
+  {
+    title: 'SipSavvy',
+    description: 'Die mobile App für Weineinsteiger. Lerne Geschmacksprofile, Aromen und die Kunst der Weinverkostung.',
+    image: 'sipsavvy_thumbnail.png',
+    link: 'https://sipsavvy.lovable.app',
+    tag: 'Education'
   },
   {
     title: 'Kids Sushi Explorer',
