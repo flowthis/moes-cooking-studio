@@ -4,56 +4,56 @@ const projects = [
   {
     title: 'Speed Reader App',
     description: 'Allows users to speed up their WPM count by pasting text that they want to consume fast. Efficient and focused.',
-    image: '/speed_reader_screenshot.png',
+    image: 'speed_reader_screenshot.png',
     link: 'https://flowthis.github.io/speed-reader-app/',
     tag: 'Productivity'
   },
   {
     title: 'Keto Flow Coach',
     description: 'Your personal guide to keto success. Track macros, plan meals, and stay in flow.',
-    image: '/keto_flow_recipes_screenshot.png',
+    image: 'keto_flow_recipes_screenshot.png',
     link: 'https://keto-flow-coach.lovable.app/',
     tag: 'Health'
   },
   {
     title: 'SnapKey',
     description: 'Fun Typing Tutor. Learn to type with speed and accuracy.',
-    image: '/snapkey_screenshot.png',
+    image: 'snapkey_screenshot.png',
     link: 'https://flowthis.github.io/snapkey/',
     tag: 'Education'
   },
   {
     title: 'Sauerteig Meister',
     description: 'Dein Begleiter fürs Brotbacken. Schritt-für-Schritt-Anleitungen, Timer und hilfreiche Tipps für das perfekte Sauerteigbrot.',
-    image: '/sauerteig_meister_thumbnail.png',
+    image: 'sauerteig_meister_thumbnail.png',
     link: 'https://sauerteig-meister.replit.app',
     tag: 'Cooking'
   },
   {
     title: 'SipSavvy',
     description: 'Die mobile App für Weineinsteiger. Lerne Geschmacksprofile, Aromen und die Kunst der Weinverkostung.',
-    image: '/sipsavvy_thumbnail.png',
+    image: 'sipsavvy_thumbnail.png',
     link: 'https://sipsavvy.lovable.app',
     tag: 'Education'
   },
   {
     title: 'Arbitrage Scanner',
     description: 'Real-time prediction market arbitrage detection and analysis tool.',
-    image: '/arbitrage_scanner_thumbnail.png',
+    image: 'arbitrage_scanner_thumbnail.png',
     link: 'https://flowthis.github.io/prediction-market-arbitrage/',
     tag: 'Fintech'
   },
   {
     title: 'Kids Sushi Explorer',
     description: 'An interactive educational app for kids to explore the world of Sushi. Built with Expo.',
-    image: '/kids_sushi_explorer_thumbnail.png',
+    image: 'kids_sushi_explorer_thumbnail.png',
     link: 'https://kids-sushi-explorer.replit.app',
     tag: 'Fun'
   },
   {
     title: 'RoboTask',
     description: 'Train robots with POV videos, earn crypto rewards, and shape the future of humanoid robotics.',
-    image: '/robotask_thumbnail.png',
+    image: 'robotask_thumbnail.png',
     link: 'https://robotask.lovable.app',
     tag: 'AI & Crypto',
     objectPosition: 'top'
@@ -61,7 +61,7 @@ const projects = [
   {
     title: 'Bassd Scho Sticker',
     description: 'A sticker campaign for a good cause. 100% proceeds go to the Children\'s Hospice Bamberg.',
-    image: '/bassd_scho_thumbnail.png',
+    image: 'bassd_scho_thumbnail.png',
     link: 'https://bassd-scho-spenden.lovable.app',
     tag: 'Charity'
   }
