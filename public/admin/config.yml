@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: flowthis/moes-cooking-studio
+  branch: main
+  base_url: https://github.com 
+  auth_endpoint: auth/github/
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+local_backend: true
+
+media_folder: "public"
+public_folder: "/"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "projects"
+        label: "All Projects"
+        file: "public/projects.json"
+        description: "List of all portfolio projects"
+        fields:
+          - label: "Projects List"
+            name: "projects"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image", media_library: {allow_multiple: false}}
+              - {label: "Link", name: "link", widget: "string"}
+              - {label: "Tag", name: "tag", widget: "string"}
+              - {label: "Object Position", name: "objectPosition", widget: "select", options: ["center", "top", "bottom", "left", "right"], default: "center", required: false}
