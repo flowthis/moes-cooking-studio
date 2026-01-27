@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "Real Estate Analyzer",
+            "description": "Comprehensive real estate investment analysis tool with PDF export capabilities.",
+            "image": "real_estate_analyzer_screenshot.png",
+            "link": "https://flowthis.github.io/real-estate-analyzer/",
+            "tag": "Fintech"
+        },
+        {
             "title": "Arbitrage Scanner",
             "description": "Real-time prediction market arbitrage detection and analysis tool.",
             "image": "arbitrage_scanner_thumbnail.png",
