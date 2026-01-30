@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "Tamagotchi",
+            "description": "A digital pet simulation game. Feed, play, and take care of your virtual pet.",
+            "image": "tamagotchi_thumbnail.png",
+            "link": "https://flowthis.github.io/tamagotchi/",
+            "tag": "Game"
+        },
+        {
             "title": "Real Estate Analyzer",
             "description": "Comprehensive real estate investment analysis tool with PDF export capabilities.",
             "image": "real_estate_analyzer_screenshot.png",
