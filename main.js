@@ -4,7 +4,7 @@ const container = document.getElementById('projects-container');
 
 async function loadProjects() {
   try {
-    const response = await fetch('projects.json');
+    const response = await fetch(`projects.json?v=${new Date().getTime()}`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
