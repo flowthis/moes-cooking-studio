@@ -77,6 +77,13 @@
             "image": "bassd_scho_thumbnail.png",
             "link": "https://bassd-scho-spenden.lovable.app",
             "tag": "Charity"
+        },
+        {
+            "title": "Retro Snake",
+            "description": "A classic Snake game implementation. Navigate the snake, eat food, and grow longer without hitting the walls or yourself.",
+            "image": "snake_poster.png",
+            "link": "/snake.html",
+            "tag": "Game"
         }
     ]
 }
