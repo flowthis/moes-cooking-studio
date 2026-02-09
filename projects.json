@@ -84,6 +84,13 @@
             "image": "snake_poster.png",
             "link": "/snake.html",
             "tag": "Game"
+        },
+        {
+            "title": "Neon Pong",
+            "description": "A retro arcade classic with a neon twist. Challenge a friend or play against yourself in this 2-player paddle game.",
+            "image": "pong_poster.png",
+            "link": "/pong.html",
+            "tag": "Game"
         }
     ]
 }
