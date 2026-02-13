@@ -67,3 +67,79 @@ function renderProjects(projects) {
 }
 
 loadProjects();
+
+// Interactive Background Logic
+const backgroundGlobes = document.querySelector('.background-globes');
+
+// Initial positions defined in CSS:
+// Globe 1: 15% 50%
+// Globe 2: 85% 30%
+
+window.addEventListener('scroll', () => {
+  window.requestAnimationFrame(() => {
+    const scrollY = window.scrollY;
+    // Use document.documentElement.scrollHeight for better cross-browser compatibility
+    // but body.scrollHeight is also often used. Let's stick to what works for the user's likely environment (modern browsers)
+    // Actually standard way is often max(body, html) but for this simple site:
+    const maxScroll = (document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight;
+
+    // Safety check div by zero
+    if (maxScroll <= 0) return;
+
+    const scrollFraction = scrollY / maxScroll;
+
+    // Movement Logic
+    // Globe 1: X moves 15% -> 45%, Y moves 50% -> 10%
+    const g1x = 15 + (scrollFraction * 30);
+    const g1y = 50 - (scrollFraction * 40);
+
+    // Globe 2: X moves 85% -> 55%, Y moves 30% -> 90%
+    const g2x = 85 - (scrollFraction * 30);
+    const g2y = 30 + (scrollFraction * 60);
+
+    backgroundGlobes.style.setProperty('--globe-2-x', `${g2x}%`);
+    backgroundGlobes.style.setProperty('--globe-2-y', `${g2y}%`);
+  });
+});
+
+// Theme Toggle Logic
+const themeToggle = document.getElementById('theme-toggle');
+const toggleIcon = themeToggle.querySelector('.toggle-icon');
+const toggleText = themeToggle.querySelector('.toggle-text');
+
+// Icons
+const moonIcon = '🌙';
+const sunIcon = '☀️';
+
+function setTheme(isLight) {
+  if (isLight) {
+    document.body.classList.add('light-mode');
+    toggleIcon.textContent = sunIcon;
+    toggleText.textContent = 'Lunch Service';
+  } else {
+    document.body.classList.remove('light-mode');
+    toggleIcon.textContent = moonIcon;
+    toggleText.textContent = 'Dinner Service';
+  }
+}
+
+// Check saved preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+  setTheme(true);
+} else {
+  // Default to dark
+  setTheme(false);
+}
+
+themeToggle.addEventListener('click', () => {
+  const isLight = document.body.classList.toggle('light-mode');
+
+  if (isLight) {
+    setTheme(true);
+    localStorage.setItem('theme', 'light');
+  } else {
+    setTheme(false);
+    localStorage.setItem('theme', 'dark');
+  }
+});

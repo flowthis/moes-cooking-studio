@@ -77,6 +77,20 @@
             "image": "bassd_scho_thumbnail.png",
             "link": "https://bassd-scho-spenden.lovable.app",
             "tag": "Charity"
+        },
+        {
+            "title": "Retro Snake",
+            "description": "A classic Snake game implementation. Navigate the snake, eat food, and grow longer without hitting the walls or yourself.",
+            "image": "snake_poster.png",
+            "link": "/snake.html",
+            "tag": "Game"
+        },
+        {
+            "title": "Neon Pong",
+            "description": "A retro arcade classic with a neon twist. Challenge a friend or play against yourself in this 2-player paddle game.",
+            "image": "pong_poster.png",
+            "link": "/pong.html",
+            "tag": "Game"
         }
     ]
 }
