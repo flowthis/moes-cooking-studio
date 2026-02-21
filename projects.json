@@ -1,6 +1,20 @@
 {
     "projects": [
         {
+            "title": "Hangman Vocab",
+            "description": "A classic word-guessing game designed to test and improve your vocabulary with categorized terms and helpful hints.",
+            "image": "hangman_vocab_thumbnail.png",
+            "link": "https://hangman-vocab.replit.app",
+            "tag": "Education"
+        },
+        {
+            "title": "Beta Caddie",
+            "description": "An AI-powered golf companion for Meta Ray-Ban glasses. Track rounds, get distances, and analyze swing footage.",
+            "image": "beta_caddie_thumbnail.png",
+            "link": "https://betacaddie.manus.space/",
+            "tag": "Sports & AI"
+        },
+        {
             "title": "SnapKey",
             "description": "Fun Typing Tutor. Learn to type with speed and accuracy.",
             "image": "snapkey_screenshot.png",
